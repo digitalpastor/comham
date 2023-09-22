@@ -1,0 +1,167 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <title>www.comhamchurch_benin.com</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+            }
+
+            .banner {
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(pga.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+
+            .navbar {
+                width: 85%;
+                margin: auto;
+                padding: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .logo {
+                width: 120px;
+                cursor: pointer;
+            }
+
+            .navbar ul li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+                
+            }
+
+            .navbar ul li a {
+                text-decoration: none;
+                color: #fff;
+                text-transform: uppercase;
+               
+            }
+
+            .navbar ul li::after {
+                content: '';
+                height: 3px;
+                width: 0;
+                background: #c52003;
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                transition: 0.5s;
+            }
+
+            .navbar ul li:hover::after {
+                width: 100%;
+            }
+
+            .content {
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                text-align: center;
+                color: white;
+
+            }
+
+            .content h1 {
+                font-size: 70px;
+                margin-top: 80px;
+            }
+
+            .content p {
+                margin: 20px auto;
+                font-weight: 100px;
+                line-height: 25px;
+            }
+            
+
+            button{
+                width: 200px;
+                padding: 15px 0;
+                text-align: center;
+                margin: 20px 10px;
+                border-radius: 25px;
+                font-weight: bold;
+                border: 2px solid #c52003;
+                background: transparent;
+                color: #fff;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+            }
+            span{
+                background: #c52003;
+                height: 100%;
+                width: 0;
+                border-radius: 25px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+                transition: 0.5s;
+            }
+            button:hover span{
+                width: 100%;
+            }
+            button:hover{
+                border: none;
+            }
+           
+            
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="Untitled-1LNWLTSSR.png" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Audio Messages</a></li>
+                    <li><a href="#">Devotionals</a></li>
+                    <li><a href="#">Study Resource</a></li>
+                    <li><a href="#">Christian Community</a></li>
+                </ul>
+
+            </div>
+
+            <div class="content">
+                <h1>DAYS OF ACTIVITIES</h1>
+                <ul>
+                    <li>Monday - Sunday</li><br>
+                    Prayer Group Meeting<br>
+                    <br>
+                    <li>Wednesdays: Bble Study</li><br>
+                    4:29pm<br>
+                    <br>
+                    <li>Thursdays: Jesus in our Streets</li><br>
+                    4:59pm<br>
+                    <br>
+                    <li>Sundays: Christ Experience Service</li><br>
+                    7:59am
+
+                </ul>
+                <div>
+                    <button type="button"><span></span><a href="index.html">HOME</a></button>
+                    <button type="button"><span></span><a href="page3.html">VIDEO BACKGROUND</a></button>
+                    
+                </div>
+            </div>
+           
+        </div>
+    </body>
+
+    </html>
